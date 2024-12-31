@@ -1,0 +1,379 @@
+ body{
+    background: rgb(22,22,22);
+    background: linear-gradient(90deg, rgba(22,22,22,1) 0%, rgba(24,24,23,1) 50%, rgba(34,33,30,1) 100%);
+    margin: 0;
+}
+.section{
+    display: flex;
+    padding: 10px;
+    height: 100vh;
+    margin: 50px 5px;
+    max-width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.name{
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 90%;
+}
+
+.name div{
+
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.name .main h1{
+    
+    color: rgb(149, 149, 149);
+    text-shadow: rgb(0, 0, 0) 4px 4px;
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+    font-family: "Pixelify Sans", serif;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.name .main h2{
+    
+    color: rgb(98, 98, 98);
+    text-shadow: rgb(0, 0, 0) 4px 4px;
+    font-size: 1.7rem;
+    letter-spacing: 5px;
+    font-family: "Pixelify Sans", serif;
+}
+
+.name .presentation{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.name button{
+
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Pixelify Sans", serif;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: black 2px 2px;
+    background-color: rgb(35, 35, 35);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.name button:hover{
+    transform: scale(1.1);
+}
+
+.name .presentation p{
+
+    color: rgb(154, 154, 154);
+    text-shadow: rgb(0, 0, 0) 4px 4px;
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+    font-family: "Pixelify Sans", serif;
+}
+
+/*FONT SIZES PARA MONITORES*/
+@media (min-width: 1024px){
+    .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 350px;
+        width: 80%;
+        margin: 0 auto;
+        height: 100vh;
+        
+    }
+
+    .main{
+        border: grey solid 5px;
+        padding: 15px;
+    }
+    .name div{
+        
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .name .main h1{
+        font-size: 7rem;
+        font-weight: bold;
+    }
+
+    .name .main h2{
+        font-size: 3em;
+    }
+
+    .name .main .presentation{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .name .main .presentation p{
+
+        font-size: 1.7rem;
+    }
+
+}
+
+/*SECCION DE "ABOUT ME" INFORMACION Y FOTO*/
+.aboutMeALL{
+    
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aboutMe{
+    display: grid;
+    grid-template-rows: minmax(120px, 1fr) minmax(120px, auto);
+    height: 80%;
+    text-align: center;
+    border: grey solid 2px;
+    padding: 35px 10px;
+    gap: 15px;
+}
+
+.aboutMe div{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.aboutMe .info{
+
+    color: white;
+    text-shadow: black 2px 2px;
+    font-family: "Pixelify Sans", 'serif';
+    font-size: clamp(1em, 2.5vh, 2rem);
+}
+
+
+
+
+/*MEDIA QUERIES PARA MONITORES*/
+@media (min-width: 1024px){
+
+
+    .aboutMeALL{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutMe{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        height: auto;
+        border: grey solid 5px;
+        padding: 15px;
+    }
+
+    .info{
+        grid-column: span 2;
+        font-size: 2rem;
+    }
+
+    .photo{
+        grid-column: span 1;
+        padding: 15px;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+
+    .photo img{
+
+        border-radius: 35px;
+        height: auto;
+        width: 100%;
+    }
+
+        
+}
+
+/*SECTION DEL STACK*/
+
+.mainStack{
+    border: grey solid 2px;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tittle{
+
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "Pixelify Sans", 'sans';
+    color: white;
+    text-shadow: black 2px 2px;
+}
+
+.gridStack{
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 80%;
+    max-height: 90%;
+    width: 90%;
+    max-width: 90%;
+
+    gap: 10px;
+}
+
+.gridStack div{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridStack div img{
+
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+@media (min-width: 1024px){
+
+    .mainStack{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 60%;
+        margin: 0 auto;
+        
+    }
+
+    .mainStack .tittle{
+
+        font-size: 4rem;
+    }
+
+    .gridStack{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: 1fr;
+        gap: 100px;
+    }
+
+    .gridStack div img{
+
+        height: 250px;
+    }
+
+    .gridStack div{
+
+        padding: 15px;
+    }
+
+}
+
+/*SECION DE FORMULARIO*/
+
+.formsAreaAll{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: grey solid 2px;
+    background-color: rgb(26, 26, 26);
+
+    /*Para las letras*/
+    color: white;
+    text-shadow: black 2px 2px;
+    font-size: 2rem;
+    font-family: "Pixelify Sans", serif;
+    
+    
+}
+
+.formsArea{
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    padding: 15px;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+.formsArea div{
+
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}
+
+.formsArea input, textarea{
+
+    background-color: rgb(35, 35, 35);
+    color: white;
+    text-shadow: black 2px 2px;
+    border: rgb(192, 191, 191) solid 2px;
+    padding: 10px 5px;
+    font-family: "Pixelify Sans", serif;
+}
+
+.formsArea input{
+
+    height: 35px;
+}
+
+@media (min-width: 1024px){
+
+    .formsAreaAll{
+
+        height: 90%;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
